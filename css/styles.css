@@ -656,6 +656,7 @@ progress {
   border-radius: 5px;
 }
 
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -690,6 +691,13 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+.row_2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* 設置等距的水平與垂直間距 */
+  margin: 0; /* 移除 margin */
+}
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -11058,3 +11066,29 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.styled-table {
+  width: 80%; /* 固定表格寬度 */
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #333; /* 邊框顏色 */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px;
+  border: 1px solid #333; /* 單一顏色邊框 */
+  text-align: center;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* 偶數行背景色 */
+}
+
+
